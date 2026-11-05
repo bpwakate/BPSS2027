@@ -8,16 +8,16 @@ import relativeLinks from 'astro-relative-links';
 const site =
   process.env['VERCEL_ENV'] !== 'production' && process.env['VERCEL_URL']
     ? `https://${process.env['VERCEL_URL']}`
-    : 'https://bpwakate.net/summer2026/'
+    : 'https://bpwakate.net/summer2027/'
 
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://bpwakate.net/summer2026/',
-    base: '/summer2026/',
+    site: 'https://bpwakate.net/summer2027/',
+    base: '/summer2027/',
   integrations: [starlight({
         plugins: [starlightThemeRapide()],
-        title: '第66回 生物物理若手の会 夏の学校',
+        title: '第67回 生物物理若手の会 夏の学校',
         favicon: 'favicon.png',
         customCss: [
             './src/styles/custom.css',
