@@ -10,7 +10,7 @@
     "directory": "./dist",
 
     // ドメインをさくらサーバーからcloudflareに変更したらコメントアウトを外す
-    // "base_path": "/summer2026",
+    // "base_path": "/summer2027",
 
     // Starlight が出力する 404.html を返す
     "not_found_handling": "404-page"
@@ -30,6 +30,6 @@
 
   // ドメインをさくらサーバーからcloudflareに変更したらコメントアウトを外す
   // "routes": [
-  //   { "pattern": "bpwakate.net/summer2026*", "zone_name": "bpwakate.net" }
+  //   { "pattern": "bpwakate.net/summer2027*", "zone_name": "bpwakate.net" }
   // ]
 }
