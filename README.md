@@ -24,9 +24,7 @@
 
 ※ 日程には書かれていないが、適宜HP、Discordの保守・更新作業が入る。
 
-※ HPの更新履歴の詳細はGithubを確認すること：[https://github.com/JunAbe0802/BPSS2026](https://github.com/JunAbe0802/BPSS2026)
-
-【参考】各係のスケジュール [https://docs.google.com/spreadsheets/d/1xempCX9Kdb0bIbPr8k8d53k5TqITXHJh5RuzinUjxOY/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1xempCX9Kdb0bIbPr8k8d53k5TqITXHJh5RuzinUjxOY/edit?usp=sharing)
+【参考】2026の各係のスケジュール [https://docs.google.com/spreadsheets/d/1xempCX9Kdb0bIbPr8k8d53k5TqITXHJh5RuzinUjxOY/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1xempCX9Kdb0bIbPr8k8d53k5TqITXHJh5RuzinUjxOY/edit?usp=sharing)
 
 # スタッフ一覧
 - 阿部潤（チーフ）
