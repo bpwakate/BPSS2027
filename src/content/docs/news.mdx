@@ -1,0 +1,25 @@
+---
+title: お知らせ
+description: お知らせのバックナンバーです。
+---
+import { LinkCard, CardGrid, LinkButton, Badge } from '@astrojs/starlight/components';
+import newsList from "@content/docs/news";
+
+{newsList
+  .sort((a, b) => new Date(b.title).getTime() - new Date(a.title).getTime()) // 日付の降順でソート
+  .map((news) => (
+    <LinkCard
+      title={news.title}
+      description={news.description}
+      href={news.href}
+    />
+  ))
+}
+
+<LinkButton
+  href="/summer2026/"
+  variant="secondary"
+  icon='seti:notebook'
+  iconPlacement='start'>
+  トップページに戻る
+</LinkButton>

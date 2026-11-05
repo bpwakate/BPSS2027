@@ -1,0 +1,44 @@
+---
+title: クロマチンがひらく生命科学の最前線
+description: オープニングセミナーの講師である胡桃坂先生および講演内容のご紹介です。
+type: "オープニングセミナー"
+date: "8月24日（月）"
+name: "胡桃坂 仁志"
+affiliation: "東京大学 定量生命科学研究所 教授"
+image: kurumizakaImage
+tags: ["エピジェネティクス", "クロマチン", "転写", "修復", "自然免疫"]
+href: "/summer2026/contents/lecture/11kurumizaka"
+---
+import kurumizakaImage from '@assets/lecturer/kurumizaka.jpg';
+export const kurumizakaData = { image: kurumizakaImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={kurumizakaImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+私たちの体は、およそ４０兆個の細胞が、分化のプロセスを経て独自の機能を持つ細胞集団へと変化していくことで、組織や臓器を形成している。その設計図は、細胞核内に収納されている長大なゲノムDNAであり、ヒトではおよそ２メートルのDNAが、直径わずか数マイクロメートルの球体である細胞核内に収納されている。この高密度パッキングを可能にしているのが、クロマチンという構造体である。我々は、このクロマチン構造が、単なるDNAの収納様式ではなく、転写1、DNA修復・組換え2、そして自然免疫制御3に至るまで、生命の根幹をなす現象の制御に深く関わっていることが明らかになってきた。これこそが、長い間の謎であった、DNA配列に依存しない遺伝子制御 “エピジェネティクス”の本体であることが、近年明らかになってきた。本講演では、クロマチンの構造と機能を明らかにする研究の面白さと現在の展開について紹介する。
+
+また、これまでの研究生活を振り返りながら、どうしてクロマチンの研究を始め、研究テーマを見つけ、育ててきたのか、困難や転機にどのように向き合ってきたのか、などについてもお話ししたい。研究者としての歩みの中で、クロマチンという不思議に出会い、多くの人々と出会い、成功したり失敗したりを繰り返しながら、人生が豊かで楽しいものになってきた。このような経験に触れ、夏の学校という若手研究者・学生が集い語り合う場において、本講演が、参加者の皆さんの将来に少しでもポジティブな役割を果たすことを願う。
+
+### 参考文献
+
+1. Kujirai, T. et al. Structural basis of the nucleosome transition during RNA polymerase II passage. Science 362, 595–598 (2018).
+2. Shioi, T. et al. Cryo-EM structures of RAD51 assembled on nucleosomes containing a DSB site. Nature 628, 212–220 (2024).
+3. Kujirai, T. et al. Structural basis for the inhibition of cGAS by nucleosomes. Science 370, (2020).
+
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>

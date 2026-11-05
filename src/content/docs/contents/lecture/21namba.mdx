@@ -1,0 +1,44 @@
+---
+title: 蚊を知り、蚊に刺されない技術をつくる：企業で挑む蚊の研究と社会実装
+description: 分科会の講師である難波先生および講演内容のご紹介です。
+type: "分科会（1）"
+date: "8月25日（火）"
+name: "難波 綾"
+affiliation: "花王株式会社 研究開発部門 ヒューマンヘルスケア研究所 グループリーダー"
+tags: ["企業研究者", "感覚科学", "蚊", "社会実装"]
+href: "/summer2026/contents/lecture/21namba"
+---
+import nambaImage from '@assets/lecturer/namba.jpg';
+export const nambaData = { image: nambaImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={nambaImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+みなさんは、「最も多くの人のいのちを奪う生き物」は何だと思うだろうか。その答えは蚊である。蚊はマラリアやデング熱などの感染症を媒介し、世界中で大きな健康被害をもたらしている。特にマラリアは毎年数十万人の命を奪っており、その多くが幼い子どもである。一方、デング熱は年間数億人規模の感染が推定されている。蚊が媒介する感染症の多くでは、ワクチンや治療手段が十分に普及しておらず、診断や治療を受けることが難しい地域も存在する。そのため、感染を防ぐ上で最も重要なのは「蚊に刺されないこと」である。
+
+私たちは、蚊の宿主探索行動の理解と、その知見を活用した蚊対策技術の開発に取り組んでいる。企業には多様な専門性を持つ研究者が集まっており、生物学だけでなく化学や界面科学など異なる視点を融合することで、蚊の行動や体の特性に着目した新しい蚊対策技術が生まれてきた。例えば、蚊の体表が特定の液体で濡れる性質を利用して肌への降着や飛行を制御する技術は、従来の忌避剤や殺虫剤とは異なる物理化学的アプローチである。
+
+本講演では、これらの技術を紹介するとともに、基礎研究と社会実装を並走させる企業研究の面白さを伝えたい。あわせて、博士課程時代に取り組んだ嗅覚受容体研究と現在の蚊研究を紹介しながら、生物の感覚や行動に興味を持ってきた一研究者として、企業研究者というキャリアを選択した理由や、博士号取得後に企業で研究を続けるという働き方についてもお話ししたい。
+
+### 参考文献
+1. Kato-Namba, A. et al. Context-dependent effects of carbon dioxide on cross-modal integration during mosquito flight. Sci Rep 15, 28139 (2025)
+2. Kato-Namba, A. et al. Surfactants alter mosquito’s flight and physical condition. Sci Rep 13, 2355 (2023)
+3. Kato, A. and Touhara, K. Mammalian olfactory receptors: pharmacology, G protein coupling and desensitization. Cell Mol Life Sci 66, 3743-3753 (2009)
+
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>

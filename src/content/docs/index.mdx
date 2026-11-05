@@ -1,0 +1,47 @@
+---
+title: SPIRAL
+description: 第66回 生物物理若手の会 夏の学校 は、2026年8月24日（月）から8月27日（木）まで、長野県の志賀スイスインで開催されます。生物物理学に関心のある学生や若手研究者が集まり、最新の研究成果を共有し、交流を深めることを目的としています。
+# template: splash # Remove or comment out this line to display the site sidebar on this page.
+hero:
+  tagline: 2026年8月24日（月）～  8月27日（木）<br> 志賀スイスイン（長野県）
+  image:
+    file: "@assets/mainIllust.png"
+  actions:
+    - text: 講演の詳細はこちら
+      link: /summer2026/content/lecture/lecturer/
+      icon: magnifier
+      variant: primary
+    - text: 参加者交流イベントについてはこちら
+      link: /summer2026/content/lecture/lecturer/
+      icon: heart
+      variant: secondary
+
+---
+
+import { LinkCard, CardGrid, LinkButton } from '@astrojs/starlight/components';
+import newsList from "@content/docs/news";
+
+## NEWS
+{newsList
+	.sort((a, b) => new Date(b.title).getTime() - new Date(a.title).getTime()) // 日付の降順でソート
+	.slice(0, 5) // 最大5つまで表示
+	.map((news) => (
+		<LinkCard
+			title={news.title}
+			description={news.description}
+			href={news.href}
+		/>
+	))
+}
+
+
+<LinkButton
+	href="/summer2026/news"
+	variant="primary"
+	icon='seti:notebook'
+	iconPlacement='start'
+>
+	過去のお知らせはこちら
+</LinkButton>
+
+

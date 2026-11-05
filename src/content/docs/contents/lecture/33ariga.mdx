@@ -1,0 +1,42 @@
+---
+title: 研究の魅力が伝わる概念図の作り方
+description: Hands-on セミナーの講師である有賀先生および講演内容のご紹介です。
+type: "Hands-on セミナー"
+date: "8月26日（水）"
+name: "有賀 雅奈"
+affiliation: "桜美林大学 リベラルアーツ学群 准教授"
+tags: ["グラフィカルアブストラクト", "研究概要図", "ビジュアル・デザイン"]
+href: "/summer2026/contents/lecture/33ariga"
+---
+import arigaImage from '@assets/lecturer/ariga.jpg';
+export const arigaData = { image: arigaImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={arigaImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+研究概要図とは申請書や論文、研究の要点をまとめた概念図の事である。ジャーナル論文の場合は特にグラフィカルアブストラクトやTOCイメージなどとも呼ばれる。ジャーナルのオンライン化や、図制作アプリケーションの普及とともに、申請書や論文、プレスリリースなど多くの場面で使用されるようになった。
+
+研究概要図の役割は研究の要点の素早い理解を助け、魅力を伝えることにある。しかし、研究者のほとんどはデザイン教育を受けたことがなく、わかりやすく魅力的な概念図をどのように作ったらいいのかわからないという声も多い。
+
+そこで、本講演では研究の魅力を伝える研究概要図を作るうえでの基本的な考え方やポイントを紹介する。講師は科学の図を中心としたコミュニケーションの研究者で科学専門デザイナーとしての経歴も持ち、研究概要図をテーマに著書も出版している[1]。これらの知識と経験を踏まえ、研究概要図の作り方として、ターゲティングとメッセージ作成の考え方、研究概要図に入れるべき情報、情報をどのようにビジュアライズしてラフ案化するのかの考え方、見やすくするためのビジュアルの整え方といった、制作プロセス全体を通じたポイントを解説する。また、参加者にもPCを持参してもらい、自分自身の研究を例としてどのようにして研究の魅力を概念図かできるのか、一緒に考えてもらう。
+
+
+### 参考文献
+1. 有賀雅奈『申請書・論文で役立つグラフィカルアブストラクト作成の基本とコツ 』羊土社 (2026). 
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>

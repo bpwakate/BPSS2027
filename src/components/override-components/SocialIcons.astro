@@ -1,0 +1,40 @@
+---
+import config from 'virtual:starlight/user-config';
+import { Icon }  from '@astrojs/starlight/components';
+import { LinkButton } from '@astrojs/starlight/components';
+
+const links = config.social || [];
+---
+
+{
+	links.length > 0 && (
+		<>
+			{links.map(({ label, href, icon }) => (
+				<LinkButton 
+          href={href} 
+          variant='minimal' 
+          class="sl-flex" 
+          rel="me"   
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+					<Icon name={icon} color=none />
+					<span>{label}</span>
+				</LinkButton>
+			))}
+		</>
+	)
+}
+
+<style>
+	@layer starlight.core {
+		.linkbutton {
+			color: var(--sl-color-text-accent);
+			padding: 0.5em;
+			margin: -0.2em;
+		}
+		.linkbutton:hover {
+			opacity: 0.66;
+		} 
+	}
+</style>

@@ -1,0 +1,35 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+
+  // ダッシュボードのWorker名と一致させる
+  "name": "bpss2026",
+  
+  "compatibility_date": "2026-11-04",
+  // main は書かない = 静的アセットだけのWorker
+  "assets": {
+    "directory": "./dist",
+
+    // ドメインをさくらサーバーからcloudflareに変更したらコメントアウトを外す
+    // "base_path": "/summer2026",
+
+    // Starlight が出力する 404.html を返す
+    "not_found_handling": "404-page"
+  },
+
+  // ログの閲覧設定
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "persist": true
+    }
+  },
+
+  // プレビューの設定。これがないと wrangler dev でプレビューできない。
+  "previews": {},
+
+  // ドメインをさくらサーバーからcloudflareに変更したらコメントアウトを外す
+  // "routes": [
+  //   { "pattern": "bpwakate.net/summer2026*", "zone_name": "bpwakate.net" }
+  // ]
+}

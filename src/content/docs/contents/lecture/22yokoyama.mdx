@@ -1,0 +1,40 @@
+---
+title: 巨大なタンパク質合成工場停止の瞬間を捉える！薬剤耐性を乗り越える抗菌薬のしくみ
+description: 分科会の講師である横山先生および講演内容のご紹介です。
+type: "分科会（1）"
+date: "8月25日（火）"
+name: "横山 武司"
+affiliation: "北海道大学 大学院水産科学研究院 准教授"
+tags: ["リボソーム", "クライオ電子顕微鏡", "薬剤耐性", "抗菌薬"]
+href: "/summer2026/contents/lecture/22yokoyama"
+---
+import yokoyamaImage from '@assets/lecturer/yokoyama.jpg';
+export const yokoyamaData = { image: yokoyamaImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={yokoyamaImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+リボソームはmRNAにコードされた遺伝情報を、コドンという枠組みで読み解き、対応するアミノ酸の配列へと変換し、機能分子であるタンパク質を合成している。細胞内の巨大な「タンパク質合成工場」である。リボソームは、その構造をダイナミックに変化させ、それに伴ってタンパク質合成を正確に進める。そのため、リボソームによるタンパク質合成の仕組みを理解するためには、その「かたち」と「動き」を捉えることが重要である。クライオ電子顕微鏡は、生体分子を急速凍結し、ガラス状の氷に閉じ込め、透過型電子顕微鏡で直接観察する手法である。画像解析による構造分類が可能で、機能する過程で構造変化するリボソームの中間構造を一つの試料から同時に捉えることが可能である。得られた構造を比較することで、リボソームの動きを解釈することが出来ることから、リボソームによるタンパク質合成メカニズムの解明において重要なツールである。
+
+近年、既存の抗菌薬が効かない、薬剤耐性微生物の出現が人類の公衆衛生上の大きな問題となっている。リボソームはタンパク質合成のプラットフォームであるため、感染性細菌の生存においても必須の分子である。そのため、抗菌薬の主要なターゲットとなっている。このような背景から、抗菌薬が「どのように」リボソームを撹乱・停止させ、また、薬剤耐性機構が「どのように」その機構を無効化するか、立体構造から得られる知見を基にした新しいコンセプトの抗菌薬デザインを達成することが重要である。本講演では、小さな抗菌薬が巨大なタンパク質合成工場をどのように停止させるのか？その仕組みを紹介する。
+
+### 参考文献
+1. Tomono, J. et al. Direct visualization of ribosomes in the cell-free system revealed the functional evolution of aminoglycoside. J. Biochem. 175(6): 587–598 (2024). 
+2. Isozaki, Y. et al. Creation of a macrolide antibiotic against non-tuberculous Mycobacterium using late-stage boron-mediated aglycon delivery. Sci. Adv. 11(10): adt2352 (2025)
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>

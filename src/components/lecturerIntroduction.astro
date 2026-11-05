@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import sampleImage from "@assets/favicon.png";
+const {faceImage, type, date, name, affiliation, tags = []} = Astro.props;
+
+interface LecturerIntroductionProps {
+  faceImage?: string;
+  type: string;
+  date: string;
+  name?: string;
+  affiliation?: string;
+  tags?: string[];
+}
+
+--- 
+<p>{type}  |&emsp;{date}</p>
+<div class="introduction">
+  <Image 
+    src={faceImage || sampleImage} 
+    alt={`${name}先生の顔写真`} 
+  />
+
+  <div>
+    <h2>{name || "名前未設定"}</h2>
+    <p>{affiliation || "所属未設定"}</p>
+    <p>{tags?.length ? tags.map((tag) => `#${tag}`).join(" ") : ""}</p>
+  </div>
+</div>
+
+<style>
+  .introduction :global(img) {
+    max-width: 25%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  .introduction {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  p {
+    margin: 0.4rem 0;
+  }
+</style>

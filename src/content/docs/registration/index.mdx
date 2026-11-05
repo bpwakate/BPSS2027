@@ -1,0 +1,48 @@
+---
+title: 参加登録方法のご案内
+description: 参加方法の概略をご説明いたします。
+---
+import { LinkCard, CardGrid, LinkButton } from '@astrojs/starlight/components';
+import LightdarkPicture from "@components/lightdarkPicture.astro";
+import lightChartImage from "@assets/flow-light.png";
+import darkChartImage from "@assets/flow-dark.png";
+
+本夏学では、以下の中から参加形態をお選びいただけます。
+詳細は各ページにてご確認ください。
+
+<CardGrid>
+  <LinkCard
+    title="現地参加（受付終了）"
+    description="会場に直接お越しいただき、対面で参加いただきます。"
+    href="/summer2026/registration/onsite"
+  />
+  <LinkCard
+    title="オンライン参加（受付終了）"
+    description="リアルタイム・オンデマンドで講演を視聴できます。"
+    href="/summer2026/registration/online"
+  />
+  <LinkCard
+    title="高校生参加（受付終了）"
+    description={`高校生の方はオンライン参加のみとなります。参加費は無料です。`}
+    href="/summer2026/registration/highschool"
+  />
+</CardGrid>
+
+:::tip[現地参加者に対する参加費支援について]
+**研究費等の財源をお持ちでない方を対象**とした、参加費の補助制度を設けております。
+**定員に達したため、受付を終了**いたしました。
+
+- 支援額：25,000円
+  - 参加費の実費負担が6,000円となります
+- 支援人数：30名（先着順）
+
+詳しくは参加登録フォーム内でご案内しておりますので、そちらをご確認ください。
+:::
+
+## 参加登録の流れ
+
+<LightdarkPicture
+  lightSrc={lightChartImage}
+  darkSrc={darkChartImage}
+  alt="参加登録規定のイメージ図"
+/>

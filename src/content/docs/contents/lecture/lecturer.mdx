@@ -1,0 +1,112 @@
+---
+title: 講演者一覧
+description: 今回の講演者の皆様を紹介いたします。
+---
+import { LinkCard, CardGrid, Aside } from '@astrojs/starlight/components';
+import LectureCard from '@components/lectureCard.astro';
+
+import * as kurumizakaInfo from './11kurumizaka.mdx';
+import { kurumizakaData } from "@content/docs/contents/lecture/11kurumizaka.mdx";
+import * as nambaInfo from './21namba.mdx';
+import { nambaData } from "@content/docs/contents/lecture/21namba.mdx";
+import * as yokoyamaInfo from './22yokoyama.mdx';
+import { yokoyamaData } from "@content/docs/contents/lecture/22yokoyama.mdx";
+import * as sakamotoInfo from './23sakamoto.mdx';
+import { sakamotoData } from "@content/docs/contents/lecture/23sakamoto.mdx";
+import * as yachimuraInfo from './24yachimura.mdx';
+import { yachimuraData } from "@content/docs/contents/lecture/24yachimura.mdx";
+import * as takeuchiInfo from './31takeuchi.mdx';
+import { takeuchiData } from "@content/docs/contents/lecture/31takeuchi.mdx";
+import * as higashiInfo from './32higashi.mdx';
+import { higashiData } from "@content/docs/contents/lecture/32higashi.mdx";
+import * as arigaInfo from './33ariga.mdx';
+import { arigaData } from "@content/docs/contents/lecture/33ariga.mdx";
+import * as takahashiInfo from './34takahashi.mdx';
+import { takahashiData } from "@content/docs/contents/lecture/34takahashi.mdx";
+import * as iinoInfo from './41iino.mdx';
+import { iinoData } from "@content/docs/contents/lecture/41iino.mdx";
+
+<Aside title="おことわり">
+  ※講演者及び講演内容は、予告なく変更される可能性があります。
+</Aside>
+
+
+## オープニングセミナー｜8月24日（月）
+<LectureCard
+  title={kurumizakaInfo.frontmatter.title}
+  name={kurumizakaInfo.frontmatter.name}
+  affiliation={kurumizakaInfo.frontmatter.affiliation}
+  image={kurumizakaData.image}
+  href={kurumizakaInfo.frontmatter.href}
+/>
+
+## 分科会｜8月25日（火）
+<LectureCard
+  title={nambaInfo.frontmatter.title}
+  name={nambaInfo.frontmatter.name}
+  affiliation={nambaInfo.frontmatter.affiliation}
+  image={nambaData.image}
+  href={nambaInfo.frontmatter.href}
+/>
+<LectureCard
+  title={yokoyamaInfo.frontmatter.title}
+  name={yokoyamaInfo.frontmatter.name}
+  affiliation={yokoyamaInfo.frontmatter.affiliation}
+  image={yokoyamaData.image}
+  href={yokoyamaInfo.frontmatter.href}
+/>
+<LectureCard
+  title={sakamotoInfo.frontmatter.title}
+  name={sakamotoInfo.frontmatter.name}
+  affiliation={sakamotoInfo.frontmatter.affiliation}
+  image={sakamotoData.image}
+  href={sakamotoInfo.frontmatter.href}
+/>
+<LectureCard
+  title={yachimuraInfo.frontmatter.title}
+  name={yachimuraInfo.frontmatter.name}
+  affiliation={yachimuraInfo.frontmatter.affiliation}
+  image={yachimuraData.image}
+  href={yachimuraInfo.frontmatter.href}
+/>
+
+## メインセミナー｜8月26日（水）
+<LectureCard
+  title={takeuchiInfo.frontmatter.title}
+  name={takeuchiInfo.frontmatter.name}
+  affiliation={takeuchiInfo.frontmatter.affiliation}
+  image={takeuchiData.image}
+  href={takeuchiInfo.frontmatter.href}
+/>
+<LectureCard
+  title={takahashiInfo.frontmatter.title}
+  name={takahashiInfo.frontmatter.name}
+  affiliation={takahashiInfo.frontmatter.affiliation}
+  image={takahashiData.image}
+  href={takahashiInfo.frontmatter.href}
+/>
+
+## Hands-on セミナー｜8月26日（水）
+<LectureCard
+  title={higashiInfo.frontmatter.title}
+  name={higashiInfo.frontmatter.name}
+  affiliation={higashiInfo.frontmatter.affiliation}
+  image={higashiData.image}
+  href={higashiInfo.frontmatter.href}
+/>
+<LectureCard
+  title={arigaInfo.frontmatter.title}
+  name={arigaInfo.frontmatter.name}
+  affiliation={arigaInfo.frontmatter.affiliation}
+  image={arigaData.image}
+  href={arigaInfo.frontmatter.href}
+/>
+
+## クロージングセミナー｜8月27日（木）
+<LectureCard
+  title={iinoInfo.frontmatter.title}
+  name={iinoInfo.frontmatter.name}
+  affiliation={iinoInfo.frontmatter.affiliation}
+  image={iinoData.image}
+  href={iinoInfo.frontmatter.href}
+/>

@@ -1,0 +1,37 @@
+---
+title: 機械としての生命を支える分子モーター
+description: クロージングセミナーの講師である飯野先生および講演内容のご紹介です。
+type: "クロージングセミナー"
+date: "8月27日（木）"
+name: "飯野 亮太"
+affiliation: "自然科学研究機構 分子科学研究所 教授"
+tags: ["分子モーター", "１分子計測", "光学顕微鏡", "タンパク質工学", "DNAナノテクノロジー"]
+href: "/summer2026/contents/lecture/41iino"
+---
+import iinoImage from '@assets/lecturer/iino.jpg';
+export const iinoData = { image: iinoImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={iinoImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+生命の活動を支える生体分子機械の多くは、一方向に運動するモーターとしての機能を持つ[1]。例えば、生命の遺伝情報は鎖状高分子の DNA や RNA にコードされ、遺伝情報の読み書きには DNA 合成酵素、RNA 合成酵素、リボソームといった分子は DNA や RNA の鎖に沿って一方向に動く必要がある。つまり、生命のセントラルドグマに関わるこれらの分子は全てリニアモーターであり、一方向に動くという機能は生命にとって必須であるといえる。生体分子モーターは、高い運動速度、運動持続性（運動距離）、エネルギー変換効率といった優れた性能を発揮する。私たちはこれまで、光学顕微鏡を用いた高速・高精度１分子計測で回転モーターやリニアモーターの運動素過程を可視化し、生体分子モーターが高い性能を発揮する仕組みを明らかにしてきた。また最近は、天然に存在する生体分子モーターを調べるだけでなく、改造して性能を高める取り組みも行っている。さらに、DNA、RNA、金ナノ粒子、金ナノロッド等を構成部品とする人工分子モーターの性能向上と機能創製にも取り組んでいる。本講演では、これらの取り組みついて未発表データと共に紹介する。また折角の機会なので、１分子計測を始めたきっかけや分子モーター研究を始めた経緯など、研究者としてのこれまでの紆余曲折についても紹介する。最初の質問への回答にイントロを記述したので、そちらも参照されたい。
+
+### 参考文献
+1. Iino, R. et al. Introduction: Molecular Motors. Chem. Rev. 120, 1-4 (2020). 
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>

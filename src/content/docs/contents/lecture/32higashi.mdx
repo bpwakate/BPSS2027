@@ -1,0 +1,39 @@
+---
+title: ゲノム配列生成AIの仕組みと実践
+description: Hands-on セミナーの講師である東先生および講演内容のご紹介です。
+type: "Hands-on セミナー"
+date: "8月26日（水）"
+name: "東 光一"
+affiliation: "情報・システム研究機構 バイオ生成AI研究開発センター 准教授"
+tags: ["ゲノム言語モデル", "自己回帰型系列モデル", "生成AI"]
+href: "/summer2026/contents/lecture/32higashi"
+---
+import higashiImage from '@assets/favicon.png';
+export const higashiData = { image: higashiImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={higashiImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+近年、自然言語処理における基盤モデルの発展は、ゲノム科学にも大きな影響を与えつつある。ゲノム言語モデル（genome language model; gLM）は、DNA配列を文字列として扱い、大規模なゲノム配列データから塩基配列の統計構造を学習するモデルである。本セミナーでは、自己回帰型系列モデルとしてのgLMの基本原理を概説し、Evo/Evo2に代表される長文脈・一塩基解像度モデルの登場が、配列生成、変異効果予測、ゲノム機能解釈にどのような可能性を開いたのかを紹介する。特に、gLMの出力する尤度は配列制約や変異効果の指標として利用でき、内部埋め込みはアノテーションを直接与えなくても機能・系統・配列文脈に対応する情報を含みうる。一方で、それらは生物学的意味そのものではなく、データ分布中の相関構造を反映した表現であり、適切な評価と解釈が不可欠である。さらに、我々が進めている国内計算基盤を用いたgLM開発、尤度・埋め込みに基づくモデル評価、Sparse autoencoderを用いた内部表現の解釈性解析について述べる。ハンズオンでは、事前計算済みのgLM埋め込みと軽量な解釈モデルを用い、DNA配列だけから学習された表現の中に、遺伝子機能やアノテーションに対応する構造がどのように現れるかを体験する。
+
+### 参考文献
+1. Nguyen, E, et al. Science 386, eado9336 (2024).
+1. Brixi, G, et al. Nature 652.8112, 1349-1361 (2026).
+
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>

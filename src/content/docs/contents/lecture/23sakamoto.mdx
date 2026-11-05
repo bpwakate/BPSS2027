@@ -1,0 +1,45 @@
+---
+title: 非平衡生命系の構築による理解：細胞運動そして分裂を超えて
+description: 分科会の講師である坂本先生および講演内容のご紹介です。
+type: 分科会（2）
+date: 8月25日（火）
+name: 坂本 遼太
+affiliation: アカデミアシニカ  物理研究所  アシスタントリサーチフェロー
+tags: ["人工細胞", "非平衡力学", "細胞骨格", "再構成", "エネルギー消費"]
+href: /summer2026/contents/lecture/23sakamoto
+---
+import sakamotoImage from "@assets/lecturer/sakamoto.jpg";
+export const sakamotoData = { image: sakamotoImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={sakamotoImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+
+生命とは何か？無生物的な分子から，いかにして複雑な生命システムは自己組織化するのか？本講演では，分子レベルの構成要素から生命システムを構築することで，これらの根源的な問いに迫る我々の研究成果を概説する．
+
+生命システムは化学エネルギーを力学的仕事へと変換し，頑健な構造を維持しながらも柔軟に形態を変化させる．生命の最小単位である一細胞の挙動は，細胞骨格やモータータンパク質などの分子機械によって制御され，そこではエネルギー消費を伴う非平衡力学が舞台となる．分子細胞生物学によって各分子の構造や作用機序が詳細に解析されてきた一方で，分裂や運動などの細胞に特有の柔軟な形態変化の非平衡力学や，ミクロな分子レベルの化学エネルギーをマクロな力学的作用に変換する効率など，依然として多くの謎が残されている．近年，このような生命の物理学に向けた新たなアプローチとして，最小限の要素から成る細胞モデル系「人工細胞」の開発が進み，精密な操作と定量的解析が可能となってきた（参考文献 1-3）．
+
+本講演では，以下の問いに焦点を当て，細胞運動や分裂を支配する物理原理の解明に向けた我々の研究成果を紹介する．細胞骨格が生み出す力はいかにして運動や分裂を協調させるのか？その過程で消費されるエネルギーと細胞骨格構造や力学過程との定量的関係とは何か？これらの理解を基に，生命現象の物理的視座に基づく制御原理を確立し，デザイナー人工組織の構築を目指す今後の研究展望について概説する．また，私のこれまでの海外での研究経験（イギリス，アメリカ，台湾）についても簡単に紹介したい．
+
+### 参考文献
+1. Sakamoto, R. & Murrell, M. P. Mechanical power is maximized during contractile ring-like formation in a biomimetic dividing cell model. Nature Communications 15, 9731 (2024).
+2. Sakamoto, R. & Murrell, M. P. F-actin architecture determines the conversion of chemical energy into mechanical work. Nature Communications 15, 3444 (2024).
+3. Sakamoto, R. et al. Geometric trade-off between contractile force and viscous drag determines the actomyosin-based motility of a cell-sized droplet. Proc. Natl. Acad. Sci. U.S.A. 119, e2121147119 (2022).
+
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>

@@ -1,0 +1,23 @@
+---
+import { Picture } from 'astro:assets';
+const { lightSrc, darkSrc, alt = '', class: className = '', ...rest } = Astro.props;
+---
+<div class={`theme-picture ${className}`}>
+  <div class="theme-img theme-img--light" aria-hidden="false">
+    <Picture src={lightSrc} alt={alt} {...rest} />
+  </div>
+  <div class="theme-img theme-img--dark" aria-hidden="true">
+    <Picture src={darkSrc} alt={alt} {...rest} />
+  </div>
+</div>
+
+<style>
+  .theme-picture { position: relative; }
+  .theme-img { display: block; }
+  .theme-img--dark { display: none; }
+
+  :root[data-theme='dark'] .theme-img--dark { display: block; }
+  :root[data-theme='dark'] .theme-img--light { display: none; }
+
+  /* `auto`/system 連動を想定する場合、テーマ切替スクリプトが documentElement.dataset.theme を更新します */
+</style>

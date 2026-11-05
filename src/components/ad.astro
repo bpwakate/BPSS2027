@@ -1,0 +1,98 @@
+---
+import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
+import adTestImage from "@assets/adTest.jpg"
+
+const imageAttrs = {
+	loading: 'eager' as const,
+	decoding: 'async' as const,
+	quality: 50,
+  layout: "full-width" as const,
+	formats: ["avif", "webp", "jpeg"] ,
+};
+
+//  39:5になっていない画像は、リサイズすること。でないと表示でバグる。
+import optoSigmaImage from "@assets/banner/sigmakoki.png";
+import thorlabsImage from "@assets/banner/thorlabsJapan_Banner.jpg";
+import nikonImage from "@assets/banner/Nikon_39_5.jpg";
+import tayoImage from "@assets/banner/tayo_39_5.jpg";
+import oistImage from "@assets/banner/OIST_BS_26_39_5.jpg";
+import kaseiImage from "@assets/banner/tokyoKasei_390x50_202606.gif";
+---
+<div class="ad">
+  <a href="https://jp.optosigma.com/ja_jp/">
+    <Picture
+      src={optoSigmaImage} 
+      alt="シグマ光機株式会社" 
+      class="adImage"
+      {...imageAttrs}
+    />
+  </a>
+  <a href="https://www.thorlabs.co.jp/ja/technical-resources?utm_source=tj&utm_medium=bpw26">
+    <Picture
+      src={thorlabsImage} 
+      alt="ソーラボジャパン株式会社" 
+      class="adImage"
+      {...imageAttrs}
+    />
+  </a>
+  <a href="https://www.nikon.com/">
+    <Picture
+      src={nikonImage} 
+      alt="株式会社ニコン" 
+      class="adImage"
+      {...imageAttrs}
+    />
+  </a>
+  <a href="https://tayo.jp/">
+    <Picture
+      src={tayoImage} 
+      alt="株式会社tayo" 
+      class="adImage"
+      {...imageAttrs}
+    />
+  </a>
+  <a href="https://shorturl.at/NRiKu">
+    <Picture
+      src={oistImage} 
+      alt="沖縄科学技術大学院大学（OIST）" 
+      class="adImage"
+      {...imageAttrs}
+    />
+  </a>
+  <a href="https://www.tcichemicals.com/JP/ja/product/topics/bioimaging_reagents?utm_source=bpwakate2026summer&utm_medium=banner&utm_campaign=bpwakate2026summer_banner">
+    <Picture
+      src={kaseiImage} 
+      alt="東京化成工業株式会社" 
+      class="adImage"
+      {...imageAttrs}
+    />
+  </a>
+</div>
+
+<style>
+  .ad {
+    gap: 0.5rem;
+    margin: 0.5rem;
+  }
+  .ad :global(img) {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  @media (min-width: 50rem) {
+    .ad {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  .adImage {
+    transition: 0.5s;
+  }
+
+  .adImage:hover {
+    opacity: 0.8;
+    box-shadow:0rem 0.1rem 0.2rem 0rem rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+</style>

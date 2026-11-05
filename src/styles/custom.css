@@ -1,0 +1,26 @@
+:root {
+  --sl-font: 'Noto Sans JP', sans-serif;
+  --title-font: 'Shippori Mincho B1', serif;
+  --sl-sidebar-width: 16rem;
+}
+
+.sl-banner {
+  @media (min-width: 72rem) {
+    [data-has-sidebar] & {
+      justify-self: stretch;
+      margin-inline: var(--sl-content-pad-x);
+    }
+  }
+}
+
+@media (max-width: 50rem) {
+  :root,
+  ::backdrop {
+    --sl-text-body: var(--sl-text-sm);
+    --sl-text-body-sm: var(--sl-text-2xs);
+    --sl-text-h1: var(--sl-text-2xl);
+    --sl-text-h2: var(--sl-text-xl);
+    --sl-text-h3: var(--sl-text-lg);
+    --sl-text-h4: unset;
+  }
+}

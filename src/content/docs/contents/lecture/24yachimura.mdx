@@ -1,0 +1,37 @@
+---
+title: 数理で観る細胞分化ダイナミクス：最適輸送理論と単一細胞データ解析
+description: 分科会の講師である⾕地村先生および講演内容のご紹介です。
+date: "8月25日（火）"
+name: "⾕地村 敏明"
+affiliation: "東北大学 数理科学共創社会センター 講師"
+tags: ["最適輸送理論", "単一細胞データ解析", "細胞分化ダイナミクス", "細胞系譜推定", "Waddingtonランドスケープ"]
+href: "/summer2026/contents/lecture/24yachimura"
+---
+import yachimuraImage from '@assets/lecturer/yachimura.jpeg';
+export const yachimuraData = { image: yachimuraImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={yachimuraImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+生物の分化過程において，細胞集団は時間とともに多様な状態へ分かれていく．この過程を理解するには，個々の遺伝子を見るだけでなく，細胞集団全体がどのように動き，どこで分岐し，どのような規則に従って状態を変えるのかを捉える必要がある．本講演では，このような細胞分化のダイナミクスを数理の言葉で眺める方法を紹介する．出発点となるのは，Waddingtonが提唱したエピジェネティック・ランドスケープである．これは細胞運命を地形の上を転がる球として表す直観的な概念図だが，近年の計測技術の発展により，単一細胞RNAシーケンスデータからその地形や軌跡を再構成する逆問題，すなわち細胞系譜推定問題として捉え直されている．本講演では，確率分布間の変形を記述する最適輸送理論に基づき，時系列単一細胞データから細胞集団の時間発展を推定する考え方を説明する．特に，我々が開発したscEGOTについて，iPS細胞から始原生殖細胞様細胞を誘導する時系列単一細胞データへの応用例を通じて解説する．scEGOTにより，細胞状態間の対応関係に加えて，遺伝子発現空間における速度場，状態間の中間過程，Waddingtonランドスケープ，動的遺伝子制御ネットワークを推定できることを説明する．さらに，現在進めている発展的な取り組みにも触れながら，生命現象を数理の視点から観ることの面白さを共有したい．
+
+### 参考文献
+1. Waddington, C.H. The Strategy of the Genes. George Allen & Unwin (1957).
+2. Yachimura, T. et al. scEGOT: single-cell trajectory inference framework based on entropic Gaussian mixture optimal transport. BMC Bioinformatics 25, 388 (2024).
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>

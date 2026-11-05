@@ -1,0 +1,43 @@
+---
+title: なんで、私が生物に！？
+description: メインセミナーの講師である竹内先生および講演内容のご紹介です。
+type: "メインセミナー"
+date: "8月26日（水）"
+name: "⽵内 ⼀将"
+affiliation: "東京大学 大学院理学系研究科 准教授"
+tags: ["統計力学", "細胞集団", "アクティブマター"]
+href: "/summer2026/contents/lecture/31takeuchi"
+---
+import takeuchiImage from '@assets/lecturer/takeuchi.jpg';
+export const takeuchiData = { image: takeuchiImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={takeuchiImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+正直に書こう。私は生物が苦手だった。もしかしたら今も苦手なのかもしれない。私は単純な人間なので、単純な設定で単純な粒子が相互作用しているだけなのに、集団になると思いもつかない不思議な性質が現れるような現象が大好物だ。生物は、そういう統計物理厨が実験研究の題材とするには複雑すぎるように思えた。
+
+なので、院生時代に没頭した研究は、非平衡相転移や非平衡界面の普遍的統計法則の実験や、大自由度カオスの数値計算などだった。生物は一切関係ない。これらは、単純な設定から、設定の詳細によらない普遍的な集団現象が現れるうえ、背後に深い数学が隠れていて二度おいしい。普遍的な物理法則を実験で研究するのだから、異なる実験系で同じ法則が現れるかを調べてみたい。こうして私は大腸菌実験に手を出した。
+
+狙った実験はうまくいかなかった。ポシャったわけではないが、意味あることをするには発想が浅はか過ぎた。しかし、その過程で目の当たりにしたのは、元気に泳ぎ回っていた大腸菌たちが突然「凍結」する、相転移的現象だった。生物集団の実験でも、相転移のような単純な物理概念がシャープに現れたのは衝撃だった。生物の集団、あるいは細胞の集団でも、意外と単純なマクロ記述ができる場面があるのかもしれない。
+
+大人になった。素晴らしい仲間、学生、テーマとの出会いがあり、気づけば微生物集団の非平衡相や相転移、微生物集団を記述するマクロ自由度などの研究をやっている。統計物理学が、生物に対してできたらいいなと思う野望も生まれた。
+
+こんな個人史の開陳で申し訳ないが、経験に伴って獲得した思いを交えながら、統計物理が生物に何をできうるか、逆に生物が統計物理に何をできうるかについて話してみたい。
+
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>

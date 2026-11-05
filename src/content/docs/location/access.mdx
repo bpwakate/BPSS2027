@@ -1,0 +1,107 @@
+---
+title: アクセス
+description: 会場「志賀スイスイン」へのアクセス情報を掲載しております。住所、地図、長野駅からのシャトルバスの運行などについてご案内します。
+---
+import { LinkButton } from '@astrojs/starlight/components';
+import LightdarkPicture from '@components/lightdarkPicture.astro';
+import lightAccessImage from '@assets/access_light.png';
+import darkAccessImage from '@assets/access_dark.png';
+
+## 会場情報
+### 会場名
+志賀スイスイン
+<LinkButton
+  href="https://www.swiss-inn.jp/"
+  variant="secondary"
+  icon="external"
+  target="_blank"
+  rel="noopener noreferrer">
+  会場公式サイトへ
+</LinkButton>
+
+### 住所
+〒381-0401 長野県下高井郡山ノ内町平穏7149
+
+<div id="map">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.867843220468!2d138.50034541201168!3d36.725735072152844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601df0261f87407d%3A0xf8df3a6704f1ca7b!2z5b-X6LOA44K544Kk44K544Kk44Oz!5e0!3m2!1sja!2sjp!4v1773306331712!5m2!1sja!2sjp" 
+    width="800" 
+    height="600" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+## 会場への経路
+### チャーターバスに関する注意事項　<small>更新：2026年8月5日</small>
+
+本夏学の参加者向けに、長野駅と会場間のチャーターバスを運行します。
+
+往路・復路ともに３便運航しますが、**参加者ごとに乗車する便が指定されています**。
+指定された便については、**参加者用Discordに掲載しているバス割り当て表をご確認ください**。
+
+### チャーターバス時刻表
+- 8月24日（月）: 長野駅発 → 発哺温泉（会場最寄りバス停）行
+  
+  出発場所：長野駅東口 ユメリアバスパーク
+
+  第1便：11:00
+
+  第2便：11:30
+
+  第3便：12:00
+
+- 8月27日（木）: 発哺温泉（会場最寄りバス停）発 → 長野駅行
+  
+  出発場所：発哺温泉バス停
+  
+  第1便：14:00
+
+  第2便：14:30
+
+  第3便：15:00
+
+<LinkButton
+  href="https://www.city.nagano.nagano.jp/documents/535/351866.pdf"
+  variant="secondary"
+  icon="external"
+  target="_blank"
+  rel="noopener noreferrer">
+  長野駅東口 ユメリアバスパークの詳細についてはこちら
+</LinkButton>
+
+### 主要都市からのアクセスについて
+
+<LightdarkPicture
+  lightSrc={lightAccessImage}
+  darkSrc={darkAccessImage}
+  alt="主要都市からのアクセス図"
+/>
+
+:::caution[会期の途中で参加・退出される方へ]
+チャーターバスは、会期の初日と最終日に運行される予定です。
+会期の途中で参加・退出される方は、長野駅まで公共交通機関やタクシーなどをご利用いただく必要があります。
+
+なお、長野駅 - 会場間を公共交通機関でお越しの際は運行情報にお気を付けください。
+
+詳細なルートにつきましては、下記サイトをご確認ください。
+<LinkButton
+  href="https://www.swiss-inn.jp/access.html#direction"
+  variant="secondary"
+  icon="external"
+  target="_blank"
+  rel="noopener noreferrer">
+  アクセス（会場公式サイト）
+</LinkButton>
+
+<LinkButton
+  href="https://www.shigakogen.gr.jp/news/summer-bus.html"
+  variant="secondary"
+  icon="external"
+  target="_blank"
+  rel="noopener noreferrer">
+  路線バスの運行情報
+</LinkButton>
+:::

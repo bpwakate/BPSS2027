@@ -1,0 +1,35 @@
+---
+title: AGIと科学的理解
+description: メインセミナーの講師である高橋先生および講演内容のご紹介です。
+type: "メインセミナー"
+date: "8月26日（水）"
+name: "⾼橋 恒⼀"
+affiliation: "理化学研究所 チームリーダー"
+image: takahashiImage
+tags: []
+href: "/summer2026/contents/lecture/34takahashi"
+---
+import takahashiImage from '@assets/lecturer/takahashi.jpg';
+export const takahashiData = { image: takahashiImage };
+import LecturerIntroduction from '@components/lecturerIntroduction.astro';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LecturerIntroduction
+  type={frontmatter.type}
+  date={frontmatter.date}
+  name={frontmatter.name}
+  affiliation={frontmatter.affiliation}
+  faceImage={takahashiImage}
+  tags={frontmatter.tags}
+/>
+
+## 講演概要
+機械学習モデルは、タンパク質構造予測をはじめ多くの現象で高い予測精度を達成しつつある。しかし「予測できること」と「理解したこと」は同じではない。本講演では、科学的理解を数理的にどう捉えるかを問う。出発点は「理解＝最短記述（圧縮）」という見方と、その理論的理想であるソロモノフ帰納である。これは計算不能な理想であり、現実の機械学習はべき則的なスケーリング、すなわち計算量・データ・パラメータの大量投入によってこれを近似してきた。一方、ヒトの脳はおよそ20Wで高度な推論を行う。汎用人工知能（AGI）が科学的理解を担うとき、その指標は損失関数なのか、それとも圧縮率やエネルギー効率なのか。予測と理解を分かつものが何かを整理したい。
+
+<LinkButton
+  href="/summer2026/contents/lecture/lecturer"
+  icon='right-arrow'
+  iconPlacement='end'
+>
+  講演者一覧に戻る
+</LinkButton>
