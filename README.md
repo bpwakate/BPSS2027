@@ -4,27 +4,36 @@
 - きれいなWebページを作成し保守管理する。
 - Discordの運営をなんのトラブルも起こることなく行う
 
-# 2026年の日程
-- 10月26日: キックオフミーティング＆1st MTG
-- 11月04日: 2nd MTG
-- 01月20日: テンプレが決まる
-- 02月04日: メインイラストのラフ画が来る→カラパレが決まる（今回はあまり意識していないが）
-- 02月06日: 3rd MTG
-- 02月16日: フォントが決まる
-- 03月11日: コードを書き始める
-- 03月31日: Web協賛ver（限定公開ver）を公開する（以降日程に合わせて随時アップデート）
-  - 項目：開催日時、場所・暫定講師リスト・スタッフリスト・協賛募集・過去夏学リンク
-- 05月下旬: 参加者用Discordの整備（チャンネル立ち上げ・ガイドライン作成）
-- 06月08日: Webフルver（参加登録フォーム付き）を公開
-- 06月08日: 参加者用Discord運用開始
-- 08月17日: 参加者用HP運用開始
-- 09月31日: オンデマンドの参加登録フォームを閉じる。HP更新作業終了
-- 09月某日: 配信用リンクをまとめたNotionページを作成・公開。
-- 11月31日: サーバー対応終了。サーバーをたたむ。
+# 2027年の日程
+- 9月24日：キックオフミーティング
+- 12月某日：1st MTG
+- **5月初週：参加登録開始**
+  - https://discord.com/channels/1529325342794448926/1549374246067896340/1564120047004295229
+- 8月31日：夏学当日（1日目）
+- 9月3日：夏学当日（4日目）
 
 ※ 日程には書かれていないが、適宜HP、Discordの保守・更新作業が入る。
 
-【参考】2026の各係のスケジュール [https://docs.google.com/spreadsheets/d/1xempCX9Kdb0bIbPr8k8d53k5TqITXHJh5RuzinUjxOY/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1xempCX9Kdb0bIbPr8k8d53k5TqITXHJh5RuzinUjxOY/edit?usp=sharing)
+
+> # 2026年の日程
+> - 10月26日: キックオフミーティング＆1st MTG
+> - 11月04日: 2nd MTG
+> - 01月20日: テンプレが決まる
+> - 02月04日: メインイラストのラフ画が来る→カラパレが決まる（今回はあまり意識していないが）
+> - 02月06日: 3rd MTG
+> - 02月16日: フォントが決まる
+> - 03月11日: コードを書き始める
+> - 03月31日: Web協賛ver（限定公開ver）を公開する（以降日程に合わせて随時アップデート）
+>   - 項目：開催日時、場所・暫定講師リスト・スタッフリスト・協賛募集・過去夏学リンク
+> - 05月下旬: 参加者用Discordの整備（チャンネル立ち上げ・ガイドライン作成）
+> - 06月08日: Webフルver（参加登録フォーム付き）を公開
+> - 06月08日: 参加者用Discord運用開始
+> - 08月17日: 参加者用HP運用開始
+> - 09月31日: オンデマンドの参加登録フォームを閉じる。HP更新作業終了
+> - 09月某日: 配信用リンクをまとめたNotionページを作成・公開。
+> - 11月31日: サーバー対応終了。サーバーをたたむ。
+>
+>【参考】2026の各係のスケジュール [https://docs.google.com/spreadsheets/d/1xempCX9Kdb0bIbPr8k8d53k5TqITXHJh5RuzinUjxOY/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1xempCX9Kdb0bIbPr8k8d53k5TqITXHJh5RuzinUjxOY/edit?usp=sharing)
 
 # スタッフ一覧
 - 阿部潤（チーフ）
@@ -208,7 +217,7 @@ VSCodeと絡めた実践は https://qiita.com/yuchi0999/items/477a47dffec98a1611
 
 2027年から、GitHubのレポジトリを公開にしました。これはより多くの意見を集めるため&レポジトリに載っているものはすべて公開情報であるため&静的サイトでありセキュリティをそんなに気にしなくていいためです。
 
-そのため、メアドをインターネットの海に解き放ちたくない人は**GitHubのメアド公開設定を非公開にしてください。**やり方は [https://qiita.com/P-man_Brown/items/66291370639294d7ffc8](https://qiita.com/P-man_Brown/items/66291370639294d7ffc8)
+そのため、メアドをインターネットの海に解き放ちたくない人は**GitHubのメアド公開設定を非公開にしてください。** やり方は [https://qiita.com/P-man_Brown/items/66291370639294d7ffc8](https://qiita.com/P-man_Brown/items/66291370639294d7ffc8)。チーフはスタッフにこの広報をすること。
 
 ### ブランチ戦略
 ブランチ戦略とは、複数人で効率よくソースコードを開発・管理するために、Gitなどのバージョン管理システムにおけるブランチの運用ルールや手順をあらかじめ定めた仕組みのこと。
@@ -216,13 +225,54 @@ VSCodeと絡めた実践は https://qiita.com/yuchi0999/items/477a47dffec98a1611
 詳細はこちら [https://techblog.insightedge.jp/entry/branch-strategy-github-flow](https://techblog.insightedge.jp/entry/branch-strategy-github-flow)
 
 ## 自動デプロイ設定
-※ **2027年から生物物理若手の会のサーバーをCloudflare Pagesに移管するため、この対応は不要になります。** ただ記録として掲載します。
+生物物理若手の会（本会）のWeb担当者に「GitHub連携を使ってCloudflare Workersでサーバー立ち上げてくれ」といえば多分伝わります。 やり方は https://github.com/bpwakate/bpwakate-root#cloudflare%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9 （このリンクは権限がある人しか見れません）
 
-2025年にGithub Actionsを使ったデプロイの自動化に成功しました。2024年まではWinSCPなどのファイル転送ツールを用いてサーバーに手動でファイルをアップロードしていたが、**mainブランチでpullもしくはmain宛にpull-requestをすると、build後のものがサーバーに自動反映**されるようになりました。
+そのうえで、ルートディレクトリに、下記の "wrangler.jsonc" を作成し、年号を全て変更、comparability_dateをレポジトリ作成日にすること。
+```jsonc
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
 
-BPSS2025レポジトリの`.github/workflows/action.yml` をコピペ改変して使用します。秘密鍵を変数に設定している関係で、変数はソースコード上になく、レポジトリの設定の `Secrets` → `Repository Secrets` に設定しています。
+  // ダッシュボードのWorker名と一致させる
+  "name": "bpss2027",
+  
+  "compatibility_date": "2026-11-04",
+  // main は書かない = 静的アセットだけのWorker
+  "assets": {
+    "directory": "./dist",
 
-ただし、プルリク確認するときに、Buildが成功したかは確認する必要があります。`npm run dev` にうまくいった場合でも、`npm run build` するとエラーを吐いてしまう時があり、そうするとデプロイはできなくなる。今回度々そういう事があったので注意したい（自戒）。
+    // ドメインをさくらサーバーからcloudflareに変更したらコメントアウトを外す
+    // "base_path": "/summer2027",
+
+    // Starlight が出力する 404.html を返す
+    "not_found_handling": "404-page"
+  },
+
+  // ログの閲覧設定
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "persist": true
+    }
+  },
+
+  // プレビューの設定。これがないと wrangler dev でプレビューできない。
+  "previews": {},
+
+  // ドメインをさくらサーバーからcloudflareに変更したらコメントアウトを外す
+  // "routes": [
+  //   { "pattern": "bpwakate.net/summer2027*", "zone_name": "bpwakate.net" }
+  // ]
+}
+```
+
+※2027年分から、生物物理若手の会自身がCloudflare Workersを用いた運用に変わったため、対応が変化しています。
+> ### ※ 2026年までの対応
+> 2025年にGithub Actionsを使ったデプロイの自動化に成功しました。2024年まではWinSCPなどのファイル転送ツールを用いてサーバーに手動でファイルをアップロードしていたが、**mainブランチでpullもしくはmain宛にpull-requestをすると、build後のものがサーバーに自動反映**されるようになりました。
+> 
+> BPSS2025レポジトリの`.github/workflows/action.yml` をコピペ改変して使用します。秘密鍵を変数に設定している関係で、変数はソースコード上になく、レポジトリの設定の `Secrets` → `Repository Secrets` に設定しています。
+> 
+> ただし、プルリク確認するときに、Buildが成功したかは確認する必要があります。`npm run dev` にうまくいった場合でも、`npm run build` するとエラーを吐いてしまう時があり、そうするとデプロイはできなくなる。今回度々そういう事があったので注意したい（自戒）。
 
 ## 掲載情報の取得方法を決める
 Webに乗っける情報をどのように集めるかを決める。
@@ -451,6 +501,7 @@ RewriteRule ^(.*)$ https://sites.google.com/view/bpwakate [R=301,L]
 # 自由記述欄
 ## 阿部
 - 来年の目標は属人化をできるだけ無くすこと
+- ブランチ保護設定を載せる
 
 ## 山口
 
