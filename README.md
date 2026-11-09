@@ -1,8 +1,8 @@
-**BPSS2026 Web 引き継ぎ文書**
+**BPSS2027 Web 引き継ぎ文書**
 # License
 - ソースコード（src/ 以下のコンポーネント・スタイル、設定ファイル等）: MIT License（LICENSE を参照）
 - 文章・画像などのコンテンツ（src/content/, src/assets/, public/ 以下）:
-  © 2026 生物物理若手の会. All rights reserved.
+  © 2027 生物物理若手の会. All rights reserved.
 - 協賛企業のロゴは各社の商標であり、上記ライセンスの対象外です。
 
 # 活動方針
