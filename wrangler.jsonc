@@ -8,9 +8,7 @@
   // main は書かない = 静的アセットだけのWorker
   "assets": {
     "directory": "./dist",
-
-    // ドメインをさくらサーバーからcloudflareに変更したらコメントアウトを外す
-    // "base_path": "/summer2027",
+    "base_path": "/summer2027",
 
     // Starlight が出力する 404.html を返す
     "not_found_handling": "404-page"
@@ -28,8 +26,8 @@
   // プレビューの設定。これがないと wrangler dev でプレビューできない。
   "previews": {},
 
-  // ドメインをさくらサーバーからcloudflareに変更したらコメントアウトを外す
-  // "routes": [
-  //   { "pattern": "bpwakate.net/summer2027*", "zone_name": "bpwakate.net" }
-  // ]
+  // ドメインのルーティング設定
+  "routes": [
+    { "pattern": "bpwakate.net/summer2027*", "zone_name": "bpwakate.net" }
+  ]
 }
